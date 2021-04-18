@@ -18,8 +18,8 @@ final class Person {
         if (this == o) return true;
         if (!(o instanceof Person)) return false;
         Person person = (Person) o;
-        return firstName == person.firstName &&
-                lastName == person.lastName &&
+        return firstName.equals(person.firstName) &&
+                lastName.equals(person.lastName) &&
                 gender == person.gender;
     }
 
